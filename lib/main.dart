@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './screens/home.dart';
+import 'screens/guest_screen.dart';
+import 'screens/login_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +10,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Dash Dev',
-      home: HomePage(),
+      home: GuestScreen(),
+      routes: {
+        GuestScreen.routeName: (ctx) => GuestScreen(),
+        LoginScreen.routeName: (ctx) => LoginScreen(),
+      },
     );
   }
 }
