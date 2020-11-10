@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'screens/guest_screen.dart';
 import 'screens/login_screen.dart';
+import 'screens/suggestions_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       routes: {
         GuestScreen.routeName: (ctx) => GuestScreen(),
         LoginScreen.routeName: (ctx) => LoginScreen(),
+        SuggestionsScreen.routeName: (ctx) => SuggestionsScreen(),
       },
     );
   }

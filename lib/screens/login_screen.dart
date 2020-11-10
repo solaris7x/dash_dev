@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/guest_background.dart';
+import './suggestions_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   static const routeName = '/login';
@@ -62,7 +63,11 @@ class LoginScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(18.0),
                       ),
                     ),
-                    onPressed: () {},
+                    // TODO: add form submit
+                    onPressed: () {
+                      Navigator.of(context)
+                          .pushNamed(SuggestionsScreen.routeName);
+                    },
                     child: Text(
                       "Continue",
                       style: TextStyle(
