@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/guest_background.dart';
+import './home_screen.dart';
 
 class SuggestionsScreen extends StatelessWidget {
   static const routeName = '/suggestions';
@@ -13,7 +14,7 @@ class SuggestionsScreen extends StatelessWidget {
         heightFactor: 0.08,
         child: FloatingActionButton(
           onPressed: () {
-            Navigator.of(context).pop();
+            Navigator.of(context).pushNamed(HomeScreen.routeName);
           },
           child: Padding(
             padding: const EdgeInsets.symmetric(
